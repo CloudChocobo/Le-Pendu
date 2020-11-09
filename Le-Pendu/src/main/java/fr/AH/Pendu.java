@@ -1,9 +1,10 @@
 package fr.AH;
 
+import java.util.Random;
 import java.util.Scanner;
 
-public class Pendu {
 
+public class Pendu {
 
 
 	public void newGame() {
@@ -17,9 +18,11 @@ public class Pendu {
         
         System.out.println("\n Merci " + joueur1.nom + ". Commençons une nouvelle partie.");
         
+        Mots mot = new Mots();
+        mot.motATrouver();
+        mot.afficherLettreMotMystere();
 
-
-
+        Potence display = new Potence();
 	}
 
 }
